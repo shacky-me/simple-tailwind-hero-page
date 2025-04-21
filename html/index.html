@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="scroll-smooth font-[Poppins]">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vanilla JS with Tailwind Project</title>
+    <meta name="description" content="A simple website built with Vanilla JavaScript and styled using Tailwind CSS.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Tailwind CSS, Vanilla JS">
+    <meta name="author" content="Meshack Kigen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body class=" bg-[#f3f3f3] h-screen">
+    <!-- Header Component -->
+    <header class="backdrop-blur-sm w-full fixed z-50 px-5 py-6 pb-4.5 mx-auto flex items-start justify-between">
+        <!-- Logo -->
+        <div>
+            <a href="#home" class="text-[#01925a] text-3xl font-bold font-sacra">KigenMeshack</a>
+        </div>
+
+        <!-- Hamburger / Close Icon -->
+        <button id="menu-toggle"
+            class="md:hidden text-[#019267] text-3xl focus:outline-none cursor-pointer fixed top-6 right-5 z-[9999] bg-white px-2 rounded">
+            <span id="menu-icon">☰</span>
+        </button>
+
+        <!-- Navigation (desktop) -->
+        <nav class="hidden md:flex items-center gap-12">
+            <ul class="flex items-center gap-16 text-[16px] font-normal">
+                <li><a href="#home" class="hover:text-[#2b5c45] transition">Home</a></li>
+                <li><a href="#work" class="hover:text-[#2b5c45] transition">Work</a></li>
+                <li><a href="#about" class="hover:text-[#2b5c45] transition">About</a></li>
+                <li><a href="#services" class="hover:text-[#2b5c45] transition">Services</a></li>
+                <li><a href="#results" class="hover:text-[#2b5c45] transition">Results</a></li>
+            </ul>
+            <a href="#reachout"
+                class="ml-6 bg-transparent text-black px-5 py-2 rounded-full transition hover:bg-black hover:text-white">
+                Reach Out
+            </a>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu"
+        class="fixed top-0 z-30 left-0 md:hidden hidden px-5 pt-20 pb-4 bg-[#f3f3f3] w-full h-screen overflow-y-auto">
+        <ul class="flex flex-col items-center gap-8 text-center text-base font-medium">
+            <li><a href="#work" class="hover:text-[#2b5c45] transition">Work</a></li>
+            <li><a href="#about" class="hover:text-[#2b5c45] transition">About</a></li>
+            <li><a href="#services" class="hover:text-[#2b5c45] transition">Services</a></li>
+            <li><a href="#results" class="hover:text-[#2b5c45] transition">Results</a></li>
+            <li><a href="#reachout"
+                    class="inline-block mt-2 bg-transparent text-black px-5 py-2 rounded-full transition hover:bg-black hover:text-white">Reach
+                    Out</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home"
+            class="w-full h-screen flex flex-col justify-between items-center relative overflow-hidden px-6 py-10 pt-40">
+            <!-- Center Name -->
+            <div class="flex-1 flex flex-col justify-center items-center text-center relative">
+                <p class="text-xs tracking-widest uppercase text-gray-500 mb-2">Meshack</p>
+                <h1 class="text-6xl md:text-8xl font-bold tracking-tight text-[#464545]">Kigen</h1>
+                <span class="text-sm text-gray-500 mt-2">est. 2025</span>
+
+                <!-- Fancy Emoji Badge -->
+                <div class="absolute top-[50%] left-[48%] transform -translate-x-1/2 -translate-y-1/2">
+                    <div
+                        class="w-10 h-10 md:w-14 md:h-14 bg-[#abcade] rounded-full flex items-center justify-center text-white text-lg md:text-2xl font-bold shadow-md animate-bounce">
+                        👀
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col md:flex-row gap-4 mt-8"></div>
+            <a href="#work"
+                class="bg-[#081d15] text-white px-6 py-3 rounded-full text-sm md:text-base font-medium shadow-lg hover:bg-[#016f47] mb-2.5 transition">
+                Explore My Work
+            </a>
+            <a href="#reachout"
+                class="bg-transparent border-2 border-[#01925a] text-[#01925a] px-6 py-3 rounded-full text-sm md:text-base font-medium shadow-lg hover:bg-[#01925a] hover:text-white transition">
+                Get in Touch
+            </a>
+            </div>
+
+            <!-- Bottom Details -->
+            <div class="text-center text-gray-600 text-sm pt-15 pb-4">
+                <p>bringing brands to life through</p>
+                <p><span class="text-[#813502] text-5xl font-sacra font-semibold">modern web solutions</span></p>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="/js/script.js" async defer></script>
+    <script src="/js/spaghetti.js" async defer></script>
+</body>
+
+</html>
